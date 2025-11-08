@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from indicators.utils import build_dashboard_data
 
-# Create your views here.
+class DashboardView(APIView):
+    def get(self, request, *args, **kwargs):
+        data = build_dashboard_data(country_code="BRA")
+        return Response(data)
