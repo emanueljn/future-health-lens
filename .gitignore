@@ -1,0 +1,62 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+.eggs/
+
+# === Virtualenv ===
+env/
+venv/
+ENV/
+VENV/
+
+# === Django ===
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+
+# Segurança: nunca subir chaves sensíveis
+.env
+*.env
+.env.*
+*.secret
+secrets.json
+
+# Arquivos de migração podem ficar no repo OU não.
+# Se quiser ignorar migrações (não recomendado para produção), use:
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# === IDEs ===
+.vscode/
+.idea/
+*.code-workspace
+
+# === Sistema operacional ===
+.DS_Store
+Thumbs.db
+
+# === Build ===
+dist/
+build/
+
+# === Node (caso use no frontend) ===
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# === Docker ===
+docker-data/
+
+# === Arquivos temporários ===
+*.tmp
+*.bak
+*.swp
+*.swo
